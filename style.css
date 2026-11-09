@@ -2,8 +2,8 @@
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;overflow-x:clip}
 body{background:var(--bg);color:var(--fg);font-family:"Heebo","Assistant",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5;overflow-x:hidden}
 h1,h2,.logo,.mq,.btn{font-family:Impact,"Arial Narrow Bold","Haettenschweiler","Arial Black",sans-serif;text-transform:uppercase}
-.nav{position:fixed;inset:0 0 auto 0;z-index:30;display:flex;align-items:center;gap:1.4rem;padding:.8rem 1.4rem;mix-blend-mode:difference;color:#fff}
-.logo{font-size:1.5rem;letter-spacing:.08em;color:#fff;text-decoration:none;margin-inline-end:auto}
+.nav{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:1.4rem;padding:.8rem 1.4rem;mix-blend-mode:difference;color:#fff}
+.logo{font-size:1.5rem;letter-spacing:.08em;color:#fff;text-decoration:none}
 .nav nav{display:flex;gap:1.6rem}.nav nav a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.05em}.nav nav a:hover{text-decoration:underline}
 .burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
 .hero{position:relative;min-height:min(100svh,860px);display:grid;align-items:end;padding:5rem 1.2rem 2rem;overflow:hidden}
