@@ -33,3 +33,4 @@ footer{text-align:center;padding:1.5rem;font-size:.85rem;letter-spacing:.2em;opa
 @media(max-width:640px){.burger{display:block}.nav{flex-wrap:wrap;mix-blend-mode:normal;background:#000c}.nav nav{display:none;order:9;flex-basis:100%;flex-direction:column;gap:0}.nav nav.open{display:flex}.nav nav a{padding:.8rem 0;border-top:1px solid #fff3;font-size:1.2rem}
 .hi{grid-template-columns:1fr 1fr}.hi img:nth-child(3){display:none}.hero h1{font-size:34vw}.tag{top:4.5rem}.cols{columns:2 9rem}.work{padding:4rem .6rem 3rem}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+.cr{position:absolute;inset:auto 0 0 0;padding:.4rem .6rem;font:600 .75rem/1.2 system-ui,sans-serif;font-style:normal;background:linear-gradient(transparent,#000c);color:#fff}#lbc{position:absolute;bottom:1rem;color:#fff;font-size:.9rem}
