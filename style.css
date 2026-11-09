@@ -1,0 +1,35 @@
+:root{--bg:#0b0b0b;--fg:#f4f1ea;--p:#eb1e7b;--y:#ffa902}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth;overflow-x:clip}
+body{background:var(--bg);color:var(--fg);font-family:"Heebo","Assistant",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.5;overflow-x:hidden}
+h1,h2,.logo,.mq,.btn{font-family:Impact,"Arial Narrow Bold","Haettenschweiler","Arial Black",sans-serif;text-transform:uppercase}
+.nav{position:fixed;inset:0 0 auto 0;z-index:30;display:flex;align-items:center;gap:1.4rem;padding:.8rem 1.4rem;mix-blend-mode:difference;color:#fff}
+.logo{font-size:1.5rem;letter-spacing:.08em;color:#fff;text-decoration:none;margin-inline-end:auto}
+.nav nav{display:flex;gap:1.6rem}.nav nav a{color:#fff;text-decoration:none;font-weight:700;letter-spacing:.05em}.nav nav a:hover{text-decoration:underline}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem;cursor:pointer}
+.hero{position:relative;min-height:min(100svh,860px);display:grid;align-items:end;padding:5rem 1.2rem 2rem;overflow:hidden}
+.hi{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1.25fr 1fr}.hi img{width:100%;height:100%;object-fit:cover;filter:saturate(1.15) contrast(1.05)}
+.hi::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,#000d)}
+.hero h1{position:relative;z-index:2;display:flex;flex-direction:column;font-size:clamp(5rem,26vw,20rem);line-height:.82;letter-spacing:-.01em;mix-blend-mode:difference;color:#fff}
+.hero h1 .o{-webkit-text-stroke:2px #fff;color:transparent}
+.tag{position:absolute;z-index:2;top:5.5rem;inset-inline-end:1.4rem;text-align:end;font-weight:700;letter-spacing:.04em;background:var(--p);padding:.5rem .9rem;transform:rotate(-3deg)}
+.scroll{position:absolute;z-index:2;bottom:1.5rem;inset-inline-start:1.4rem;color:#fff;font-weight:700;text-decoration:none}
+.mq{background:var(--p);color:#000;overflow:hidden;white-space:nowrap;padding:.5rem 0;font-size:clamp(1.5rem,4vw,2.6rem);transform:rotate(-1.2deg);margin:-1rem 0 0;width:100%;position:relative;z-index:3}
+.mq div{display:inline-block;animation:mq 25s linear infinite}.mq span,.mq i{margin:0 1.2rem;font-style:normal}
+@keyframes mq{to{transform:translateX(50%)}}
+.work{padding:6rem 1rem 4rem;max-width:90rem;margin:auto}
+h2{font-size:clamp(3.5rem,14vw,10rem);line-height:.85;margin-bottom:2.5rem}h2 em{font-style:normal;color:transparent;-webkit-text-stroke:2px var(--fg)}
+.cols{columns:4 14rem;column-gap:.7rem}
+.it{position:relative;display:block;break-inside:avoid;margin-bottom:.7rem;overflow:hidden;background:#222}
+.it img{display:block;width:100%;height:auto;transition:transform .6s,filter .4s;filter:grayscale(.25)}
+.it:hover img,.it:focus img{transform:scale(1.06);filter:none}
+.it span{position:absolute;top:.5rem;inset-inline-start:.6rem;font:700 .8rem/1 Impact,sans-serif;letter-spacing:.1em;color:#fff;mix-blend-mode:difference}
+.contact{padding:6rem 1.2rem 5rem;text-align:center;background:var(--fg);color:#000}
+.contact h2{margin-bottom:1.5rem}.contact h2 em{-webkit-text-stroke:2px #000}.contact p{font-size:1.3rem;font-weight:700;margin-bottom:1.5rem}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;justify-content:center}
+.btn{display:inline-block;padding:.8rem 1.8rem;background:#000;color:#fff;text-decoration:none;font-size:1.4rem;letter-spacing:.06em;border:3px solid #000;transition:.2s}
+.btn:hover{background:var(--p);border-color:var(--p);transform:translateY(-3px)}.btn.o{background:transparent;color:#000}.btn.o:hover{color:#fff}
+footer{text-align:center;padding:1.5rem;font-size:.85rem;letter-spacing:.2em;opacity:.7}
+#lb{position:fixed;inset:0;z-index:50;background:#000f;display:grid;place-items:center}#lb[hidden]{display:none}#lb img{max-width:94vw;max-height:92vh}#x{position:absolute;top:1rem;left:1rem;font-size:2.6rem;color:#fff;background:none;border:0;cursor:pointer}
+@media(max-width:640px){.burger{display:block}.nav{flex-wrap:wrap;mix-blend-mode:normal;background:#000c}.nav nav{display:none;order:9;flex-basis:100%;flex-direction:column;gap:0}.nav nav.open{display:flex}.nav nav a{padding:.8rem 0;border-top:1px solid #fff3;font-size:1.2rem}
+.hi{grid-template-columns:1fr 1fr}.hi img:nth-child(3){display:none}.hero h1{font-size:34vw}.tag{top:4.5rem}.cols{columns:2 9rem}.work{padding:4rem .6rem 3rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
